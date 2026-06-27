@@ -1,16 +1,26 @@
-# React + Vite
+# Amit Ashok Beloshe - Developer Portfolio 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> **Live Demo:** [View my live portfolio here](https://YOUR_VERCEL_LINK.vercel.app/)
 
-Currently, two official plugins are available:
+Welcome to the repository for my personal developer portfolio. This project was built to showcase my transition into software engineering, highlighting my technical skills, education, and full-stack projects.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🛠️ Tech Stack Built With
+* **Frontend:** React.js, HTML5, CSS3
+* **Animations:** Native CSS keyframes, Intersection Observer API
+* **Deployment:** Vercel
 
-## React Compiler
+## ✨ Key Features
+* **Modern UI/UX:** Glassmorphism design elements with dynamic mouse-tracking glow effects on project cards.
+* **Theme Engine:** Fully functioning Light/Dark mode toggle utilizing CSS variables.
+* **Responsive Design:** Fluid layout that adapts perfectly from mobile devices to ultrawide monitors.
+* **Scroll Animations:** Elements fade and slide into view seamlessly using the Intersection Observer API.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📂 Featured Projects Highlighted
+1. **Shedula:** An AI-powered Kanban task management application built with Spring Boot (Java), React, and MySQL. Features full CRUD operations and a secure REST API architecture.
+2. **Anime Streaming Platform:** A full-stack web application featuring secure user authentication, catalog management, and video handling built with Python and MySQL.
 
-## Expanding the ESLint configuration
+## 📬 Connect With Me
+I am actively seeking backend or full-stack software engineering roles.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* **LinkedIn:** [Amit Beloshe](https://linkedin.com/in/amit-beloshe-29162133b)
+* **Email:** amitbeloshe007@gmail.com
