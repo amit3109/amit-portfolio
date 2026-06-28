@@ -463,7 +463,7 @@ function App() {
             <div className="cta-btns">
               <a href="mailto:amitbeloshe007@gmail.com" className="btn btn-p">amitbeloshe007@gmail.com</a>
               <a href="https://linkedin.com/in/amit-beloshe-29162133b" target="_blank" rel="noreferrer" className="btn btn-g">LinkedIn</a>
-              <a href="/Amit_Beloshe_Resume.pdf" download="Amit_Beloshe_Resume.pdf" className="btn btn-g">Download CV 📄</a>
+              <a href="/resume.pdf" download="Amit_Beloshe_Resume.pdf" className="btn btn-g">Download CV 📄</a>
             </div>
             <div className="socials">
               <a href="https://github.com/amti3109" target="_blank" rel="noreferrer">GitHub</a>
