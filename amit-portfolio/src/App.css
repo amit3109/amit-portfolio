@@ -607,7 +607,7 @@ section {
   color: var(--blue);
 }
 
-/* SKILLS, EDU, ABOUT, CONTACT (Skipping unchanged layout CSS for brevity, keeps existing grid/layout rules but inherits updated vars automatically) */
+/* SKILLS, EDU, ABOUT, CONTACT */
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -971,33 +971,27 @@ footer {
     border-bottom: none;
   }
 
-  /* Project Cards */
+  /* ---- SHEDULA & ANIME MOBILE PROJECT FIX ---- */
   .proj-card,
   .proj-card.flip {
     grid-template-columns: 1fr;
     display: flex;
-    flex-direction: column-reverse;
-    /* Put image above text */
+    flex-direction: column;
+    /* Restored natural stacking */
   }
 
+  /* Target the foreground text containers over images */
   .proj-info {
     width: 100% !important;
-    padding: 30px !important;
-    background: var(--s1);
-    /* Ensure readability */
+    margin-left: 0 !important;
+    padding: 25px !important;
+    background: transparent !important;
+    /* Ensure background image remains visible */
+    margin-top: 180px;
+    /* Pushes text below the visual part of the image */
   }
 
-  .proj-vis {
-    min-height: 220px;
-    padding: 0;
-  }
-
-  .proj-vis img {
-    -webkit-mask-image: none !important;
-    /* Removes fade mask on mobile */
-    mask-image: none !important;
-  }
-
+  /* Ensures tags/bullets align correctly on mobile */
   .proj-info .tags,
   .proj-info .pills,
   .proj-info .bullets,
