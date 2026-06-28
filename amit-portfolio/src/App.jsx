@@ -21,7 +21,11 @@ function App() {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((e) => {
-          if (e.isIntersecting) e.target.classList.add('v');
+          if (e.isIntersecting) {
+            e.target.classList.add('v');
+            // Optional: Stop observing once it has animated in to save performance
+            observer.unobserve(e.target);
+          }
         });
       },
       { threshold: 0.08 }
@@ -50,12 +54,12 @@ function App() {
 
     // Cleanup listeners on unmount
     return () => {
-      animatedElements.forEach((el) => observer.unobserve(el));
+      observer.disconnect(); // THIS IS THE FIX: Completely shuts down the observer safely
       glowCards.forEach((card) => {
         card.removeEventListener('mousemove', handleMouseMove);
       });
     };
-  }, []); // Empty dependency array ensures this runs once on mount
+  }, []); // Empty dependency array ensures this runs once on mount // Empty dependency array ensures this runs once on mount
 
   return (
     <div className="page">
@@ -213,8 +217,14 @@ function App() {
                   <div className="bullet">Applied MVC architecture for clean separation</div>
                 </div>
                 <div className="proj-links">
+                  {/* GitHub Link */}
                   <a href="https://github.com/amti3109" target="_blank" rel="noreferrer" className="lk-main">
-                    View on GitHub →
+                    View Code →
+                  </a>
+
+                  {/* Live Demo Link */}
+                  <a href="https://shedula-project-1.onrender.com/" target="_blank" rel="noreferrer" className="lk-main" style={{ color: 'var(--blue)' }}>
+                    Live Demo ↗
                   </a>
                 </div>
               </div>
@@ -453,6 +463,7 @@ function App() {
             <div className="cta-btns">
               <a href="mailto:amitbeloshe007@gmail.com" className="btn btn-p">amitbeloshe007@gmail.com</a>
               <a href="https://linkedin.com/in/amit-beloshe-29162133b" target="_blank" rel="noreferrer" className="btn btn-g">LinkedIn</a>
+              <a href="/Amit_Beloshe_Resume.pdf" download="Amit_Beloshe_Resume.pdf" className="btn btn-g">Download CV 📄</a>
             </div>
             <div className="socials">
               <a href="https://github.com/amti3109" target="_blank" rel="noreferrer">GitHub</a>
